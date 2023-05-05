@@ -53,7 +53,10 @@
 		"allowJs": true,
 		"checkJs": true,
 
-		"allowImportingTsExtensions": true
+		"allowImportingTsExtensions": true,
+
+		"declaration": true,
+		"declarationDir": "dist"
 	},
 
 	"include": [

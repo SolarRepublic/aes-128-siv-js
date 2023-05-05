@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "type": "module",
   "module": "dist/main.mjs",
+  "types": "dist/main.d.ts",
   "files": [
-    "dist/*"
+    "dist/main.*"
   ],
   "license": "Apache 2",
   "scripts": {
