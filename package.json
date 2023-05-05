@@ -1,6 +1,6 @@
 {
   "name": "@solar-republic/aes-128-siv-js",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "module": "dist/main.mjs",
   "types": "dist/main.d.ts",
