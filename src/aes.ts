@@ -1,7 +1,6 @@
-export const NB_AES_BLOCK = 16;
+import {ATU8_NIL} from '@solar-republic/belt';
 
-// empty buffer
-export const ATU8_NIL = new Uint8Array(0);
+export const NB_AES_BLOCK = 16;
 
 // zero block
 const ATU8_ZERO_BLOCK = new Uint8Array(16);
