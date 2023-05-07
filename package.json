@@ -18,7 +18,8 @@
   "scripts": {
     "dev": "yarn build -w",
     "build": "rollup --config rollup.config.ts --configPlugin @rollup/plugin-typescript",
-    "test": "node --loader ts-node/esm test/aes-cmac.ts && node --loader ts-node/esm test/aes-siv.ts"
+    "test": "node --loader ts-node/esm test/aes-cmac.ts && node --loader ts-node/esm test/aes-siv.ts",
+    "pub": "npm publish --access=public"
   },
   "devDependencies": {
     "@rollup/plugin-terser": "^0.4.1",
