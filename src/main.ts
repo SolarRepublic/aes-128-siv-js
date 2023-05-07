@@ -1,5 +1,6 @@
+import {ATU8_NIL} from '@solar-republic/belt';
 
-import {ATU8_NIL, NB_AES_BLOCK, aes_ctr, aes_key, s2v} from './aes';
+import {NB_AES_BLOCK, aes_ctr, aes_key, s2v} from './aes';
 
 // splits an AES-128 SIV key
 const split_siv_key = async(atu8_key: Uint8Array): Promise<[CryptoKey, CryptoKey]> => {

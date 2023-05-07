@@ -49,14 +49,12 @@
 			"~/*": ["./*"],
 		},
 
-		// anywhere js is used/imported, perform type checking on it
-		"allowJs": true,
-		"checkJs": true,
-
-		"allowImportingTsExtensions": true,
-
 		"declaration": true,
 		"declarationDir": "dist"
+	},
+
+	"ts-node": {
+		"experimentalSpecifierResolution": "node"
 	},
 
 	"include": [

@@ -1,8 +1,9 @@
 import {webcrypto} from 'node:crypto';
 
-import {pass, fail, caught} from './helper.ts';
-import {buffer_to_base64, hex_to_buffer} from './util.ts';
-import {aes128SivEncrypt, aes128SivDecrypt} from '../src/main.ts';
+import {buffer_to_base64, hex_to_buffer} from '@solar-republic/belt';
+
+import {pass, fail, caught} from './helper';
+import {aes128SivEncrypt, aes128SivDecrypt} from '../src/main';
 
 if(!globalThis.crypto) globalThis.crypto = webcrypto;
 

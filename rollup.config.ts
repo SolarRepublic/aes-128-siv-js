@@ -23,4 +23,8 @@ export default defineConfig({
 
 		filesize(),
 	],
+
+	external: [
+		'@solar-republic/belt',
+	],
 });

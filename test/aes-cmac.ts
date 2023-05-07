@@ -1,8 +1,9 @@
 import {webcrypto} from 'node:crypto';
 
-import {pass, fail} from './helper.ts';
-import {buffer_to_base64, buffer_to_hex, hex_to_buffer} from './util.ts';
-import {aes_cmac_init, aes_key} from '../src/aes.ts';
+import {buffer_to_base64, buffer_to_hex, hex_to_buffer} from '@solar-republic/belt';
+
+import {pass, fail} from './helper';
+import {aes_cmac_init, aes_key} from '../src/aes';
 
 if(!globalThis.crypto) globalThis.crypto = webcrypto;
 
