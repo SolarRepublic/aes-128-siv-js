@@ -38,6 +38,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@solar-republic/belt": "0.2.1"
+    "@solar-republic/belt": "0.3.0"
   }
 }
