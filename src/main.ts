@@ -1,4 +1,4 @@
-import {ATU8_NIL} from '@solar-republic/belt';
+import {ATU8_NIL, buffer} from '@solar-republic/belt';
 
 import {NB_AES_BLOCK, aes_ctr, aes_key, s2v} from './aes';
 
@@ -37,7 +37,7 @@ export const aes128SivEncrypt = async(atu8_key: Uint8Array, atu8_plaintext: Uint
 	const [d_key_cbc, d_key_ctr] = await split_siv_key(atu8_key);
 
 	// prep payload
-	const atu8_payload = new Uint8Array(NB_AES_BLOCK + atu8_plaintext.byteLength);
+	const atu8_payload = buffer(NB_AES_BLOCK + atu8_plaintext.byteLength);
 
 	// V = S2V(K1, AD1, ..., ADn, P))
 	const atu8_iv = await s2v(d_key_cbc, atu8_plaintext, a_ad);
